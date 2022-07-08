@@ -55,7 +55,7 @@ in
       wantedBy = [ "multi-user.target" ];
       requires = [ "epmd.service" "network.target" ];
       after = requires;
-      path = with pkgs; [ elixir ];
+      path = with pkgs; [ gawk elixir ];
 
       environment = {
         HOME = "/tmp";
